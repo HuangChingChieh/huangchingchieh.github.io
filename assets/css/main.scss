@@ -1,13 +1,13 @@
-@import "custom";
+@import 'custom';
 
 /* Bootstrap Tree Shaking */
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
 // @import '~bootstrap/scss/code';
-@import "~bootstrap/scss/grid";
+@import '~bootstrap/scss/grid';
 // @import "~bootstrap/scss/tables";
 // @import '~bootstrap/scss/forms';
 // @import '~bootstrap/scss/buttons';
@@ -26,7 +26,7 @@
 // @import "~bootstrap/scss/alert";
 // @import "~bootstrap/scss/progress";
 // @import "~bootstrap/scss/media";
-// @import "~bootstrap/scss/list-group";
+@import '~bootstrap/scss/list-group';
 // @import '~bootstrap/scss/close';
 // @import "~bootstrap/scss/toasts";
 // @import '~bootstrap/scss/modal';
@@ -37,27 +37,27 @@
 // @import "~bootstrap/scss/print";
 
 // 將~bootstrap/scss/_utilities.scss展開
-@import "~bootstrap/scss/utilities/align";
-@import "~bootstrap/scss/utilities/background";
-@import "~bootstrap/scss/utilities/borders";
-@import "~bootstrap/scss/utilities/clearfix";
-@import "~bootstrap/scss/utilities/display";
-@import "~bootstrap/scss/utilities/embed";
-@import "~bootstrap/scss/utilities/flex";
-@import "~bootstrap/scss/utilities/float";
-@import "~bootstrap/scss/utilities/interactions";
-@import "~bootstrap/scss/utilities/overflow";
-@import "~bootstrap/scss/utilities/position";
-@import "~bootstrap/scss/utilities/screenreaders";
-@import "~bootstrap/scss/utilities/shadows";
-@import "~bootstrap/scss/utilities/sizing";
-@import "~bootstrap/scss/utilities/spacing";
-@import "~bootstrap/scss/utilities/stretched-link";
-@import "~bootstrap/scss/utilities/text";
-@import "~bootstrap/scss/utilities/visibility";
+@import '~bootstrap/scss/utilities/align';
+@import '~bootstrap/scss/utilities/background';
+@import '~bootstrap/scss/utilities/borders';
+@import '~bootstrap/scss/utilities/clearfix';
+@import '~bootstrap/scss/utilities/display';
+@import '~bootstrap/scss/utilities/embed';
+@import '~bootstrap/scss/utilities/flex';
+@import '~bootstrap/scss/utilities/float';
+@import '~bootstrap/scss/utilities/interactions';
+@import '~bootstrap/scss/utilities/overflow';
+@import '~bootstrap/scss/utilities/position';
+@import '~bootstrap/scss/utilities/screenreaders';
+@import '~bootstrap/scss/utilities/shadows';
+@import '~bootstrap/scss/utilities/sizing';
+@import '~bootstrap/scss/utilities/spacing';
+@import '~bootstrap/scss/utilities/stretched-link';
+@import '~bootstrap/scss/utilities/text';
+@import '~bootstrap/scss/utilities/visibility';
 
 /* Bootstrap Vue Tree Shaking */
-@import "~bootstrap-vue/src/utilities";
+@import '~bootstrap-vue/src/utilities';
 // @import '~bootstrap-vue/src/custom-controls';
 // @import '~bootstrap-vue/src/icons/index';
 
@@ -90,7 +90,15 @@
 // @import "~bootstrap-vue/src/components/toast/index";
 // @import "~bootstrap-vue/src/components/tooltip/index";
 
-html,
-body {
+#__layout {
+  display: flex;
+  align-items: center;
+}
+#__layout,
+#__nuxt,
+body,
+html {
   background-color: $light;
+  height: 100%;
+  width: 100%;
 }

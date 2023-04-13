@@ -12,7 +12,8 @@
     "lint:prettier": "prettier --check .",
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "deploy": "nuxt generate && push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
@@ -30,6 +31,7 @@
     "@commitlint/config-conventional": "^17.1.0",
     "@nuxtjs/eslint-config": "^11.0.0",
     "@nuxtjs/eslint-module": "^3.1.0",
+    "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/stylelint-module": "^4.1.0",
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
@@ -38,6 +40,9 @@
     "husky": "^8.0.1",
     "postcss-html": "^1.5.0",
     "prettier": "^2.7.1",
+    "push-dir": "^0.4.1",
+    "sass": "^1.57.1",
+    "sass-loader": "^10.4.1",
     "stylelint": "^14.13.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-vue": "^1.4.0",
