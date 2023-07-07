@@ -4,7 +4,7 @@
       <b-col>
         <div class="p-3">
           <img
-            src="https://i.imgur.com/c3QXDERb.jpg"
+            src="https://imagizer.imageshack.com/v2/320x240q70/922/bqqju1.jpg"
             alt="大頭貼"
             width="120"
             class="rounded-circle mx-auto d-block shadow-sm"
@@ -17,7 +17,7 @@
           <b-list-group class="w-100 shadow-sm">
             <b-list-group-item>
               <link-item
-                href="https://matters.news/@chaoshuang"
+                href="https://imagizer.imageshack.com/v2/320x240q70/923/vVGeI5.png"
                 :img="$icon(64)"
                 img-alt="MATTERS部落格"
               >
@@ -27,7 +27,7 @@
             <b-list-group-item>
               <link-item
                 href="https://huangchingchieh.github.io/blog/"
-                img="https://imgur.com/KVfAulXs.png"
+                img="https://imagizer.imageshack.com/v2/320x240q70/924/BXzYTB.png"
                 img-alt="技術筆記"
               >
                 使用Nuxt.js架的Github
