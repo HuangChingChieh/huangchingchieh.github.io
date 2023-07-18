@@ -17,7 +17,7 @@
           <b-list-group class="w-100 shadow-sm">
             <b-list-group-item>
               <link-item
-                href="https://imagizer.imageshack.com/v2/320x240q70/923/vVGeI5.png"
+                href="https://matters.news/@chaoshuang"
                 :img="$icon(64)"
                 img-alt="MATTERS部落格"
               >
