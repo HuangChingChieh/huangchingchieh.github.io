@@ -46,5 +46,11 @@ import linkItem from '~/components/link-item.vue'
 export default {
   name: 'IndexPage',
   components: { linkItem },
+  head() {
+    const { $icon } = this
+    return {
+      link: [{ rel: 'icon', type: 'image/png', href: $icon(32) }],
+    }
+  },
 }
 </script>
