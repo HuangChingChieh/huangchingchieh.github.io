@@ -17,21 +17,12 @@
           <b-list-group class="w-100 shadow-sm">
             <b-list-group-item>
               <link-item
-                href="https://matters.news/@chaoshuang"
-                :img="$icon(64)"
-                img-alt="MATTERS部落格"
-              >
-                放置於Matters部落格平台的雜七雜八心情紀錄，歡迎大家前往聊天。
-              </link-item>
-            </b-list-group-item>
-            <b-list-group-item>
-              <link-item
                 href="https://huangchingchieh.github.io/blog/"
-                img="https://imagizer.imageshack.com/v2/320x240q70/924/BXzYTB.png"
+                :img="$icon(64)"
                 img-alt="技術筆記"
               >
                 使用Nuxt.js架的Github
-                Pages部落格，放置Fedora以及前端程式的技術筆記與心得紀錄。
+                Pages部落格，紀錄前端技術筆記、使用Linux的心得，以及生活雜記。
               </link-item>
             </b-list-group-item>
           </b-list-group>

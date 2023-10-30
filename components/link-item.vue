@@ -1,13 +1,17 @@
 <template>
-  <a :href="href" target="_blank" class="d-flex align-items-center text-body">
+  <a
+    :href="href"
+    target="_blank"
+    class="d-flex align-items-center text-body link-item"
+  >
     <img
       :src="img"
       :alt="imgAlt"
       height="60"
-      class="rounded border border-white mr-3"
+      class="rounded-circle border border-white shadow-sm mr-3"
     />
 
-    <slot />
+    <small><slot /></small>
   </a>
 </template>
 <script>
@@ -28,3 +32,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.link-item img {
+  border-width: 3px !important;
+}
+</style>
