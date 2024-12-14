@@ -6,3 +6,7 @@ public
 
 ## husky
 .husky
+
+## image
+*.jpg
+*.svg
