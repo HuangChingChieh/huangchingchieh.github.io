@@ -2,9 +2,9 @@
   <dl class="grid gap-y-2">
     <div v-for="skill in skills" :key="skill.icon" class="flex flex-row">
       <dt class="pr-2">
-        <img
-          :src="images[skill.icon]"
-          class="min-w-6 min-h-6 h-6 w-6 block object-contain"
+        <Icon
+          :name="`skill-icons:${skill.icon}`"
+          class="min-w-6 min-h-6 h-6 w-6 block rounded-full"
         />
       </dt>
       <dd class="grow">{{ skill.text }}</dd>
@@ -13,22 +13,13 @@
 </template>
 
 <script setup>
-const glob = import.meta.glob("@/assets/img/skills/*.svg", { eager: true });
-
-const images = Object.fromEntries(
-  Object.entries(glob).map(([key, value]) => [
-    key.split("/").pop().split(".").shift(),
-    value.default,
-  ]),
-);
-
 const skills = [
   {
-    icon: "nuxt",
+    icon: "nuxtjs-dark",
     text: "Nuxt 2 / 3",
   },
   {
-    icon: "js",
+    icon: "javascript",
     text: "Javascript",
   },
   {
@@ -36,7 +27,7 @@ const skills = [
     text: "SCSS / CSS",
   },
   {
-    icon: "html5",
+    icon: "html",
     text: "HTML5",
   },
   {
