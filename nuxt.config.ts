@@ -2,13 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@pinia/nuxt",
-    "@nuxt/eslint",
-    "@nuxtjs/google-fonts",
-    "@nuxt/icon",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint", "@nuxt/icon", "@nuxt/image"],
   features: {
     inlineStyles: false,
   },
@@ -24,12 +18,6 @@ export default defineNuxtConfig({
     },
     rootAttrs: {
       class: "md:h-full w-full",
-    },
-  },
-  googleFonts: {
-    // Options
-    families: {
-      "Noto Sans TC": true,
     },
   },
 });

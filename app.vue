@@ -6,20 +6,23 @@
       <div
         class="grid grid-cols-1 gap-y-4 w-full max-w-[400px] mx-auto my-auto"
       >
-        <picture>
-          <img
-            src="~/assets/img/sticker.jpg"
-            class="w-[200px] rounded-full mx-auto border-4 border-teal-500 shadow block aspect-square"
-            alt="大頭貼"
-          />
-        </picture>
+        <NuxtPicture
+          src="/img/sticker.jpg"
+          :img-attrs="{
+            class: `w-[200px] rounded-full mx-auto border-4 border-teal-500 shadow block aspect-square`,
+            alt: `大頭貼`,
+          }"
+        />
 
         <h1 class="text-3xl font-bold text-center">黃敬傑</h1>
         <p class="text-justify">
           具備 7 年前端開發經驗，主要使用 Nuxt 從零開發網站與系統專案。
         </p>
 
-        <nav>
+        <h2 class="text-xl font-bold">核心開發技術</h2>
+        <SkillList />
+
+        <nav class="mt-3">
           <ul class="flex flex-wrap justify-center">
             <li v-for="link in links" :key="link.icon" class="mx-4">
               <a :href="link.href" target="_blank"
@@ -30,15 +33,6 @@
             </li>
           </ul>
         </nav>
-
-        <h2 class="text-xl font-bold">核心開發技術</h2>
-        <SkillList />
-
-        <!-- <h2 class="text-lg font-bold">其他工具</h2>
-        <p>
-          CI/CD、Docker 容器化開發（VSCode Dev Container）、略懂基礎
-          Linux（平常生活使用 Fedora）
-        </p> -->
       </div>
     </aside>
 
@@ -73,7 +67,7 @@ useHead({
 
 <style lang="scss">
 * {
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: sans-serif;
   color: inherit;
 }
 </style>
