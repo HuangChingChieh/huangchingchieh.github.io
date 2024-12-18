@@ -1,6 +1,6 @@
 <template>
   <div v-for="(item, i) in company" :key="i">
-    <h3 class="text-2xl font-bold">{{ item.name }}</h3>
+    <h3 class="text-xl font-bold">{{ item.name }}</h3>
 
     <dl class="mt-2 grid grid-cols-1 gap-y-2">
       <CompanyExpItem icon="mdi:calendar">{{ item.periods }}</CompanyExpItem>
@@ -30,7 +30,7 @@ const company = [
     title: "前端工程師",
     periods: "2018/01 ~ 在職中",
     achievements: [
-      "從零開始與多個部門協作，並獨力開發多個對外網站及內部管理系統的前端部份並上線。",
+      "與多個部門協作，從零開始且獨力開發多個對外網站及內部管理系統的前端部份並上線。",
       "將以 jQuery 為基底的網站漸進改版成 Nuxt 2，提昇開發效率及程式碼可讀性。",
       "將舊有靜態檔 css / js 最小化使載入時間提昇近 30%",
       "透過調整套件引入方式將 Bundle Size 降低近 50%。",

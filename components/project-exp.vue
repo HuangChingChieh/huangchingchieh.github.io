@@ -1,6 +1,6 @@
 <template>
   <div v-for="(item, i) in projects" :key="i">
-    <h3 class="text-2xl font-bold">
+    <h3 class="text-xl font-bold">
       <component
         :is="item.href ? `a` : `span`"
         :href="item.href || false"
@@ -28,13 +28,12 @@ const projects = [
   {
     name: "捷元 B2B 採購專區",
     href: "https://www.genb2b.com/",
-    description:
-      "將舊的基於ASP.NET的網站改版為前後端分離的新網站，並將其RWD化。",
+    description: "與後端協作，將基於ASP.NET的網站改版為前後端分離的RWD新網站。",
     achievements: [
       "於公司首次導入 PM2，在網站發生問題時自動重啟，降低 MIS 管理伺服器負擔。",
       "於公司首次建置 CI/CD 流程，大幅降低過往須人工更新網站的繁瑣流程。",
-      "使用 Nuxt 2 的 analyze 功能並調整框架引入方式，，分析並降低最終的 bundle size 約 50%。",
-      "與後端協作，實做 OTP 登入流程，降低 PKI 憑證登入難維運的問題。",
+      "使用 Nuxt 2 的 analyze 功能並調整框架引入方式，分析並降低 bundle size 約 50%。",
+      "與後端協同實做 OTP 登入流程，降低原網站 PKI 憑證登入難維運的問題。",
     ],
   },
   {
@@ -43,7 +42,7 @@ const projects = [
     description: "公司內部管理人員、部門及內部表單簽核的系統",
     achievements: [
       "規劃並切分表單元件，讓新進同事能快速進入狀況開發新表單。",
-      "將系統當頁面簡單引入 Vue 的開發方式，在不影響舊頁面功能的前提下漸次改版至 Nuxt 2，增加開發效率、元件化程度以及降低協作難度。",
+      "將系統直接引入 Vue Runtime 的開發方式，在不影響舊頁面功能的前提下漸次改版至 Nuxt 2，增加開發效率、元件化程度以及降低協作難度。",
     ],
   },
   {
@@ -54,7 +53,7 @@ const projects = [
       "與後端協作，在兩週內便將複雜的表單式服務選擇器開發並上線，大幅增加服務商品規格的設定多元性。",
       "與後端團隊配合使用 ASP.NET 技術解決單使用 Vue 的 SSR 問題",
       "串接 Line Pay、AFTEE 增加使用者付款方式",
-      "配合 UI/UX 漸進改版並同時維持原有樣式",
+      "配合 UI/UX 在時維持原有樣式的前提下漸進改版至新樣式",
       "串接 UA 電子商務追蹤並於後來轉移至 GA4",
     ],
   },
