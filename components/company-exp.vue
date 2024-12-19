@@ -29,25 +29,21 @@ const company = [
     name: "合邦商網股份有限公司",
     title: "前端工程師",
     periods: "2018/01 ~ 在職中",
-    achievements: [
-      "與多個部門協作，從零開始且獨力開發多個對外網站及內部管理系統的前端部份並上線。",
-      "將以 jQuery 為基底的網站漸進改版成 Nuxt 2，提昇開發效率及程式碼可讀性。",
-      "將舊有靜態檔 css / js 最小化使載入時間提昇近 30%",
-      "透過調整套件引入方式將 Bundle Size 降低近 50%。",
-      "建立公司第一個使用 CI / CD 流程的前端專案",
-    ],
     works: [
-      "串接行銷工具（Google Analytics 4 電子商務追蹤、FB Pixel、Line Liff、Bebit……等等）",
-      "串接金流（Line Pay、AFTEE、銀行信用卡付款……等等）",
+      "評估企劃提出的開發或維運需求中，前端相關功能之可行性與時程。",
+      "與視覺設計師、後端工程師或其他前端工程師協作開發或維運網站",
+      "與其他前端工程師討論並規劃網站架構與選擇框架",
+      "主要使用Nuxt / Vue開發並維運網站的前端部份",
+      "依需求串接行銷工具（Google Tag Manager、Google Analytics 4 電子商務追蹤、FB Pixel、Bebit）",
+      "依需求串接金流（Line Pay、AFTEE、銀行信用卡付款）",
+      "依需求串接各種第三方API（Google Map、Facebook登入、Line Liff）",
     ],
   },
   {
     name: "鴻揚科技",
     title: "軟體工程師",
     periods: "2017/06 ~ 2017/08",
-    works: [
-      "開發企業客戶應用系統Java AP程式，視專案開發階段，滿足客戶專案需求並接受公司指派及指導。",
-    ],
+    works: ["開發企業客戶應用系統Java AP程式"],
   },
 ];
 </script>

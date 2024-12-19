@@ -1,5 +1,5 @@
 <template>
-  <div class="text-lg flex">
+  <div class="flex">
     <dt class="pt-1">
       <Icon :name="icon" />
     </dt>

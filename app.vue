@@ -37,7 +37,7 @@
     </aside>
 
     <section
-      class="grow overflow-hidden bg-gray-200 md:h-full grid lg:grid-cols-2 md:overflow-y-auto"
+      class="grow overflow-hidden bg-gray-100 md:h-full grid lg:grid-cols-2 md:overflow-y-auto"
     >
       <ExpContainer title="工作經歷">
         <CompanyExp />
